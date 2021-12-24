@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "ngcc:sync": "ngcc --async=false",
-"build:demoangapp1": "ng build demoangapp1 --prod"
+"build:demoangapp1": "ng build demoangapp1 --prod",
+"postinstall": "ngcc --properties es2015 browser module main --async false --first-only",
+
   },
   "private": true,
   "dependencies": {
