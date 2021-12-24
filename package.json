@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "ngcc": "ngcc --properties es2015 browser module main --async false",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ngcc:sync": "ngcc --async=false",
+"build:demoangapp1": "ng build demoangapp1 --prod"
   },
   "private": true,
   "dependencies": {
